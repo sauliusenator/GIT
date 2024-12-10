@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Vartotojų Valdymo Sistema</title>
+    <script src="vart_sas.js" defer></script>
+    <link rel="stylesheet" href="./vart_sas.css">
+
+</head>
+<body>
+    <div id="userForm">
+        <input type="text" id="nameInput" placeholder="Vardas" required>
+        <input type="email" id="emailInput" placeholder="El. paštas" required>
+        <button onclick="addUser()">Pridėti Vartotoją</button>
+    </div>
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Vardas</th>
+                <th>El. paštas</th>
+                <th>Veiksmai</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- Čia bus dinamiškai užpildoma vartotojų sąrašu -->
+        </tbody>
+    </table>
+
+
+</body>
+</html>
+
+
+
+
+<!-- Sukurti paprastą vartotojų sąrašą, kuris leidžia:
+1. Parodyti vartotojų sąrašą iš testapi.io.
+2. Pridėti naują vartotoją.
+3. Ištrinti vartotoją.
+Reikalavimai:
+1. Naudoti testapi.io vartotojų API (naudoti Users endpoint, kur galima skaityti, kurti ir trinti duomenis).
+2. Naudoti fetch užklausoms atlikti.
+3. Vizualizuoti duomenis naudojant DOM.
+4. Užtikrinti dinamišką DOM atnaujinimą (be puslapio perkrovimo).
+Instrukcijos:
+1. HTML struktūra:
+• Sukurkite paprastą vartotojų sąrašo lentelę.
+• Pridėkite formą su laukeliais: Vardas, El. paštas ir mygtuką „Pridėti vartotoją“.
+2. JS funkcionalumas:
+• Sukurkite funkciją, kuri iš testapi.io paima vartotojų sąrašą ir parodo jį lentelėje.
+• Sukurkite funkciją, kuri leidžia formoje įvestus duomenis išsiųsti POST užklausa ir pridėti vartotoją.
+• Sukurkite funkciją, kuri leidžia ištrinti vartotoją naudojant DELETE užklausą.
+3. CSS (nebūtina, bet smagu):
+• Papuoškite sąsają, kad ji atrodytų patraukliai. -->
+
